@@ -19,10 +19,10 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Restore main project
-        run: dotnet restore ConsoleApp1.csproj
+        run: dotnet restore ChatBot/ConsoleApp1/ConsoleApp1.csproj
 
       - name: Build main project
-        run: dotnet build ConsoleApp1.csproj --no-restore --configuration Release
+        run: dotnet build ChatBot/ConsoleApp1/ConsoleApp1.csproj --no-restore --configuration Release
 
       - name: Restore test project
         run: dotnet restore ConsoleApp1.Test/ConsoleApp1.Test.csproj
